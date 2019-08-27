@@ -6,12 +6,11 @@ public class PolePewnegoKola {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         double s2;
-        double r = s.nextInt();
-        double d = s.nextInt();
-        double r2 = (r * r) - ((d * d) / 4);
-        s2 = Math.PI * r2;
-        if (s2 >= 0.01) {
-            System.out.println(s2);
-        }
+        double PI = 3.141592654;
+        double r = s.nextDouble();
+        double d = s.nextDouble();
+        double r2 = -1 * ((d / 2) * (d / 2) - r * r);
+        s2 = PI * r2;
+        System.out.println(s2);
     }
 }
